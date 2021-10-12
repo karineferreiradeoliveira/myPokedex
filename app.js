@@ -15,7 +15,7 @@ const fetchPokemon = () => {
 
             accumulator += `
                 <li class="card ${types[0]}">
-                <img class="card-image"  alt="${pokemon.name}" src="https://pokeres.bastionbot.org/imagens/pokemon/${pokemon.id}.png"/>
+                <img class="card-image"  alt="${pokemon.nome}" src= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png"/>
                 <h2 class="card-title">${pokemon.id}.${pokemon.name}</h2>
                 <p class="card-subtitle">${pokemon.types.map(typeInfo => typeInfo.type.name).join('|')}</p>
                 </li>
@@ -32,3 +32,5 @@ const fetchPokemon = () => {
 }
 
 fetchPokemon()
+
+//"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${pokemon.id}.png"
